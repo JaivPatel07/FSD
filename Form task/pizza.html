@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Customer Detail</legend>
+            <b>Name:</b> <input type="text" placeholder="Enter your name" value="" min="2" max="10">
+            <br>
+            <b>Mobile Number: </b>	<input type="tel" placeholder="Enter your Mobile Number" min="10" max="10">
+            <br>
+            <table>
+                <tr><th>Address:</th>
+                <td><textarea name="Address" placeholder="Enter Address"></textarea></td></tr>
+            </table>
+
+        </fieldset>
+    </form>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Pizza Topping Detail</legend>
+            <table>
+                <b></b>
+                <tr>
+                    <th rowspan="3">Pizza type:</th>
+                    <td>
+                        <input type="checkbox" name="ptype" value="S">Supreme
+                    </td>
+                    <td>Qt.<input type="number"  min="1" max="10"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="ptype" value="V">Vegetarian
+                    </td>
+                    <td>
+                        Qt.<input type="number"  min="1" max="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="ptype" value="F">Farmville
+                    </td>
+                    <td>
+                        Qt.<input type="number"  min="1" max="10">
+                    </td>
+                </tr>
+            </table>
+            <b>Pizza Size:</b>
+            <input type="radio" name="size" value="small">Small
+            <input type="radio" name="size" value="Medium">Medium
+            <input type="radio" name="size" value="Large">Large
+            <br>
+            <b>Pizza Sauce:</b>
+            <input list="Sauce"> 
+            <datalist id="Sauce">
+                <option>Tometo</option>
+                <option value="Chilly">
+                <option value="BBQ">
+            </datalist>
+            <table>
+                <tr>
+                    <th rowspan="2">Extra Topping:</th>
+                    <td>
+                        <input type="checkbox" name="Topping" value="Cheese">Cheese
+                        <input type="checkbox" name="Topping" value="Extra veg">Extra veg
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="Topping" value="Roasted Broccoli">Roasted Broccoli	
+                        <input type="checkbox" name="Topping" value="Black olives">Black olives
+                    </td>
+                </tr>
+            </table>
+            <b>Delivery Instruction</b>
+            <br>
+            <textarea>
+            </textarea>
+            <br>
+            <input type="submit" value="send my order">
+        </fieldset>
+    </form>
+</body>
+</html>
