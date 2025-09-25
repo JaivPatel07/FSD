@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend><b>Registration for Course</b></legend>
+
+            <label for="First name">First name:</label>
+            <input type="text" id="First name" minlength="2" maxlength="10">
+
+            <label for="Last name">Last name:</label>
+            <input type="text" id="Last name" minlength="2" maxlength="10">
+
+            <br>
+
+            <label for="Password">Password:</label>
+            <input type="password" id="Password">
+
+            <br>
+
+            <label for="DOB"> D.O.B</label>
+            <input type="date" id="DOB">
+
+            <br>
+
+            <label for="email"> Email</label>
+            <input type="email" id="email">
+
+            <br>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="gender" name="gen" value="Male">Male
+            <input type="radio" id="gender" name="gen" value="Female">Female
+
+            <br>
+
+            <label for="subject">Subject of selection:</label>
+            <input type="checkbox" id="subject" name="sub">FSD-1
+            <input type="checkbox" id="subject" name="sub">DE
+            <input type="checkbox" id="subject" name="sub">PYTHON
+
+            <br>
+
+
+            City:
+            <select name="City">
+                <option selected disabled>--city--</option>
+                <optgroup label="Gujarat">
+                    <option> Ahmedabad</option>
+                    <option value="Vadodara">Vadodara</option>
+                    <option value="surat">Surat</option>
+                </optgroup>
+                <optgroup label="Rajasthan">
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Jodhpur">Jodhpur</option>
+                    <option value="Udaipur">Udaipur</option>
+                </optgroup>
+            </select>
+
+
+            <br>
+
+
+            Semister:
+            <select name="sem">
+                <option selected disabled>--sem--</option>
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+            </select>
+
+            <br>
+
+            Upload CV:  
+            <input type="file" accept="">
+
+            <br>
+
+            Submit:
+            <input type="submit" name="submit">
+            <input type="reset">
+
+            <br>
+
+            <input type="button" value="Next page">
+        </fieldset> 
+    </form>
+</body>
+</html>
