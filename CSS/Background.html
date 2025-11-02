@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.div{display:flex;flex-wrap:wrap;gap:3px;}</style>
+</head>
+<body>
+    <b>Background color:</b>
+    <div style="background-color: lightblue;">hello</div>
+    <table>
+        <tr>
+            <th colspan="2">background-image</th>
+        </tr>
+        <tr>
+            <th>iamge size 250x250 px,height&width=250px</th>
+            <td>
+                <div style="width:250px; height:250px; background-image: url('image.jpeg'); background-repeat: no-repeat;"></div>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">background-repeat</th>
+        </tr>
+        <tr>
+            <th>repeat(height 300px width 500px)</th>
+            <td>
+                <div style="width:500px; height:300px; background-image: url('image.jpeg'); background-repeat: repeat;"></div>
+            </td>
+        </tr>
+        <tr>
+            <th>no-repeat(height 300px width 500px)</th>
+            <td>
+                <div style="width:500px; height:300px; background-image: url('image.jpeg'); background-repeat: no-repeat;"></div>
+            </td>
+        </tr>
+        <tr>
+            <th>repeat-x(height 300px width 600px)</th>
+            <td>
+                <div style="width:600px; height:300px; background-image: url('image.jpeg'); background-repeat: repeat-x;"></div>
+            </td>
+        </tr>
+        <tr>
+            <th>repeat-y(height 400px width 600px)</th>
+            <td>
+                <div style="width:600px; height:400px; background-image: url('image.jpeg'); background-repeat: repeat-y;"></div>
+            </td>
+        </tr>
+    </table>
+    <b style="font-size: 30px; text-align: center;text-decoration: underline; ">background-position:</b>
+    <br>
+    <br>
+    <div class="div">
+        <b style="font-size: 20px;">Left:</b>
+        <div style="width:300px; height:300px; background-image: url(image.jpeg); background-repeat: no-repeat; background-position: left;border: 3px solid black;"></div>
+        <b style="font-size: 20px;">Center:</b>
+        <div style="width:300px; height:300px; background-image: url(image.jpeg); background-repeat: no-repeat; background-position: center; border: 3px solid black;"></div>
+        <b style="font-size: 20px;">Right:</b>
+        <div style="width:300px; height:300px; background-image: url(image.jpeg); background-repeat: no-repeat; background-position: right; border: 3px solid black;"></div>
+        <b style="font-size: 20px;">Bottom:</b>
+        <div style="width:300px; height:300px; background-image: url(image.jpeg); background-repeat: no-repeat; background-position: bottom; border: 3px solid black;"></div>
+        <b style="font-size: 20px;">Top:</b>
+        <div style="width: 300px; height:300px; background-image: url(image.jpeg); background-repeat: no-repeat; background-position: top; border: 3px solid black;"></div>
+        <b style="font-size: 20px;">Top Left:</b>
+        <div style="width:300px; height:300px; background-image: url(image.jpeg); background-repeat: no-repeat; background-position: top left; border: 3px solid black;"></div>
+    </div>
+    <br>
+    <br>
+    <b style="font-size: 30px; text-align: center;text-decoration: underline; ">background-size:(height=500px width=400px)</b>
+    <br>
+    <br>
+    <div class="div">
+        <b style="font-size: 20px;">auto(keeps the original size)</b>
+        <div style="width:400px; height:500px; background-image: url(image.jpeg); background-repeat: no-repeat; background-size: auto; border: 3px solid black;"></div>
+        <b style="font-size: 20px;">cover(scales image to cover the entire area)</b>
+        <div style="width:400px; height:500px; background-image: url(image.jpeg); background-repeat: no-repeat; background-size: cover; border: 3px solid black;"></div>
+        <b style="font-size: 20px;">contain(scales image to fit within the area)</b>
+        <div style="width:400px; height:500px; background-image: url(image.jpeg); background-repeat: no-repeat; background-size: contain; border: 3px solid black;"></div>
+        <b style="font-size: 20px;">(background-size:400px 500px)</b>
+        <div style="width:400px; height:500px; background-image: url(image.jpeg); background-repeat: no-repeat; background-size: 400px 500px; border: 3px solid black;"></div>
+    </div>
+    <b style="font-size: 30px; text-align: center;text-decoration: underline; ">background-attachment</b>
+        <br>
+        <br>
+    <div class="div">
+        <b style="font-size: 20px;">fixed:</b>
+        <div style="background-image: url(image.jpeg); background-attachment: fixed; height: 500px ; width: 500px;"></div>
+        <b style="font-size: 20px;">scroll(default):</b>
+        <div style="background-image: url(image.jpeg); background-attachment: scroll; height: 500px ; width: 500px;"></div>
+    </div>
+    <b style="font-size: 30px; text-align: center;text-decoration: underline; ">background-clip</b>
+        <br>
+        <br>
+    <b style="font-size: 20px;">border box:(border=10px padding=10px font size=50px)</b>
+    <div style="border: 10px dashed black; background-clip: border-box; background-color:rgb(91, 178, 255); font-size: 50px; padding: 10px;">border-box</div>
+    <b style="font-size: 20px;">padding box:(border=10px padding=10px font size=50px)</b>
+    <div style="border: 10px dashed black; background-clip: padding-box; background-color:rgb(91, 178, 255); font-size: 50px; padding: 10px;">padding-box</div>
+    <b style="font-size: 20px;">content box:(border=10px padding=10px font size=50px)</b>
+    <div style="border: 10px dashed black; background-clip: content-box; background-color:rgb(91, 178, 255); font-size: 50px; padding: 10px;">content-box</div> 
+</body>
+</html>
