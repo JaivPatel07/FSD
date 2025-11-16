@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 20px;
+        }
+        .a:hover{
+            background-color: aqua;
+        }
+        .b:active{
+            color:blue;
+        }
+        .c input:focus{       
+            border: 2px solid blue;
+            box-shadow: 0 0 5px rgba(10, 0, 0, 0.5);
+            background-color:green;
+        }
+        .d:link {
+        color: red;
+        }
+        .e a:visited {
+            color: green;
+        }
+        .box {
+            display: none;
+        }
+
+        #toggle:checked~.box {
+            display: block;
+            background: lightblue;
+            padding: 10px;
+        }
+
+        ul li:nth-child(2) {
+            color: red;
+            font-weight: bold;
+            }
+        ul li:not(.special) {
+            font-style: italic;
+            background-color: aqua;
+        }
+        div p::first-line { color: red; font-weight: bold;}
+        div p::first-letter { font-size: 50px; color: blue; text-decoration: underline;}
+        div p::before { content: " Note: "; color: green;}
+        div p::after { content: "😊"; }
+        div ul li::marker { color: purple; font-size: 40px;}
+        ::selection { background-color: yellow; color: red;}
+    </style>
+</head>
+<body>  
+    :hover
+    <div class=a> 
+        Lorem ipsum dolor sit amet.  
+    </div>
+    <br>
+    :active
+    <div class=b> 
+         click me
+    </div>
+    <br>
+    :focus
+    <div class=c> 
+        <input type="text">  
+    </div>
+    <br>
+    :link
+    <div class=d> 
+        <a href="#">click me</a>  
+    </div>
+    <br>
+    <div class=e> 
+        <a href="#">click me</a>  
+    </div>
+    <input type="checkbox" id="toggle">
+    <label for="toggle">Show box</label>
+    <div class="box">This is a hidden box</div>
+
+    <ul>
+        <li>First item</li>
+        <li>Second item (nth-child) :nth-child(2)</li>
+        <li class="special">Special item (not affected)</li>
+        <li>Fourth item</li>
+    </ul>
+
+    <h1>Pseudo Element</h1>
+    <div>
+        <p>
+        This is a paragraph demonstrating CSS pseudo-elements. The first letter and first line are styled differently, and extra content is added before and after the text.
+        </p>
+        <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
